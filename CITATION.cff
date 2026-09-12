@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use TopoPulse, cite the software release."
+title: "TopoPulse: dynamic biological network visualization"
+type: software
+authors:
+  - family-names: Mishra
+    given-names: Abhinav
+version: 0.1.0
+date-released: 2026-09-11
+url: "https://github.com/BioVisForge/topopulse"
+repository-code: "https://github.com/BioVisForge/topopulse"
+license: MIT
+keywords:
+  - bioinformatics
+  - systems biology
+  - network visualization
+  - scientific animation
+

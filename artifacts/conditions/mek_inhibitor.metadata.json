@@ -1,0 +1,81 @@
+{
+  "package": "topopulse",
+  "version": "0.1.0",
+  "network_sha256": "fc7a7738d6216d20fb022180fc17150de381a99dbe422d2056ce5472d05426a3",
+  "node_count": 5,
+  "edge_count": 5,
+  "time_points": [
+    "0",
+    "5",
+    "10",
+    "15",
+    "20",
+    "30",
+    "45"
+  ],
+  "layout": "spring",
+  "layout_seed": 42,
+  "normalization": {
+    "nodes": "symmetric",
+    "edges": "global"
+  },
+  "filtering": {
+    "max_nodes": 5000,
+    "max_edges": 20000,
+    "node_filter": "none",
+    "min_degree": 0,
+    "edge_threshold": null,
+    "top_k_edges": null
+  },
+  "visual_mappings": {
+    "nodes": {
+      "color_by": "value",
+      "size_by": null,
+      "opacity_by": null,
+      "border_width_by": null,
+      "cmap": "coolwarm",
+      "normalization": "symmetric",
+      "fixed_range": null,
+      "percentile_range": [
+        0.02,
+        0.98
+      ],
+      "size_range": [
+        250.0,
+        1100.0
+      ],
+      "missing_policy": "neutral",
+      "missing_color": "#b8bec7",
+      "base_color": "#4c78a8",
+      "edgecolor": "#20242a"
+    },
+    "edges": {
+      "width_by": "value",
+      "color_by": null,
+      "opacity_by": null,
+      "cmap": "coolwarm",
+      "normalization": "global",
+      "fixed_range": null,
+      "percentile_range": [
+        0.02,
+        0.98
+      ],
+      "width_range": [
+        0.5,
+        6.0
+      ],
+      "color": "#586069",
+      "activation_color": "#267a3d",
+      "inhibition_color": "#a92c2c",
+      "missing_policy": "neutral",
+      "direction": "network"
+    }
+  },
+  "fps": 4.0,
+  "resolution": [
+    960,
+    640
+  ],
+  "codec": "libx264",
+  "created_utc": "2026-09-11T08:37:24.321741+00:00"
+}

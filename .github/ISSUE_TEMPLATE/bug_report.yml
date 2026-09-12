@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Remove sensitive biological data; use a synthetic example where possible.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: TopoPulse version
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, FFmpeg, output format, and installation method.
+

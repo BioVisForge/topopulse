@@ -1,0 +1,28 @@
+name: Benchmarks
+
+on:
+  workflow_dispatch:
+    inputs:
+      scale:
+        description: "Benchmark scale"
+        required: true
+        default: "standard"
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - run: uv sync --all-extras --locked
+      - run: uv run maturin develop --release
+      - run: uv run python benchmarks/benchmark_core.py > benchmark.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-${{ github.sha }}
+          path: benchmark.json
+

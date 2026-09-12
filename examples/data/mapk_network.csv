@@ -1,0 +1,7 @@
+source,target,type,weight,confidence,database
+EGFR,RAS,activation,1.0,0.98,synthetic
+RAS,RAF,activation,0.9,0.95,synthetic
+RAF,MEK,activation,0.9,0.96,synthetic
+MEK,ERK,activation,1.0,0.99,synthetic
+ERK,RAF,inhibition,0.7,0.90,synthetic
+

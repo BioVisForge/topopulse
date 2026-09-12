@@ -1,0 +1,1 @@
+"""TopoPulse benchmark entry points."""

@@ -1,0 +1,23 @@
+[package]
+name = "topopulse"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Computational backend for TopoPulse"
+repository = "https://github.com/BioVisForge/topopulse"
+homepage = "https://github.com/BioVisForge/topopulse"
+documentation = "https://biovisforge.github.io/topopulse/"
+
+[lib]
+name = "topopulse"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+numpy = "0.23"
+pyo3 = {version = "0.23", features = ["abi3-py311"]}
+rayon = "=1.10.0"
+rayon-core = "=1.12.1"
+rustc-hash = "=2.0.0"
+
+[dev-dependencies]
+approx = "0.5"
